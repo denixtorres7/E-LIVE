@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E-LIVE</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+background:transparent !important;
+}
+
+body{
+
+margin:0;
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-family:Arial,Helvetica,sans-serif;
+
+background:transparent !important;
+
+overflow:hidden;
+
+}
+
+
+/* TARJETA TRASERA */
+
+.login-wrap{
+
+position:relative;
+
+margin-top:80px;
+
+}
+
+
+.login-wrap::before{
+display:none;
+}
+
+.login-card::after{
+display:none;
+}
+
+.login-card{
+
+width:390px;
+height:390px;
+
+background:#300021;
+
+border-radius:35px 0 35px 0;
+
+padding:55px 45px 35px;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+/* TITULO */
+
+h2{
+
+color:white;
+
+text-align:center;
+
+font-size:26px;
+
+font-weight:700;
+
+letter-spacing:2px;
+
+margin-bottom:40px;
+
+}
+
+
+/* LABELS */
+
+label{
+
+display:block;
+
+color:white;
+
+font-size:12px;
+
+font-weight:bold;
+
+margin-bottom:10px;
+
+}
+
+
+/* INPUTS */
+
+input[type=text],
+input[type=password]{
+
+width:92%;
+
+height:42px;
+
+padding-left:18px;
+
+border:none;
+
+outline:none;
+
+font-size:15px;
+
+background:white;
+
+border-radius:
+0 18px
+0 18px;
+
+margin-bottom:28px;
+
+}
+
+
+/* CHECK */
+
+.remember{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin-bottom:60px;
+
+}
+
+
+.remember span{
+
+color:white;
+
+font-size:11px;
+
+font-weight:600;
+
+}
+
+
+/* ESPACIO PARA BOTONES */
+
+.boton-area{
+
+height:55px;
+
+}
+
+
+/* ESPACIO OLVIDÓ */
+
+.olvido-area{
+
+height:20px;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="login-wrap">
+
+<div class="login-card">
+
+<h2>INICIA SESIÓN</h2>
+
+<form>
+
+<label>USUARIO</label>
+<input type="text" value="">
+
+<label>CONTRASEÑA</label>
+<input type="password">
+
+<div class="remember">
+
+<input type="checkbox">
+
+<span>MANTENERME CONECTADO</span>
+
+</div>
+
+
+<div class="boton-area"></div>
+
+<div class="olvido-area"></div>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>
